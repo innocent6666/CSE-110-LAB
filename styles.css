@@ -1,0 +1,43 @@
+#section1{
+    background-color: rgb(245, 240, 230);
+}
+
+#section2{
+    background-image: url('bg-orbs-1.jpg');
+
+    color: white;
+}
+
+.block{
+    display: innavbarne-block;
+    margin-bottom: 20px;
+}
+#navbar{
+    width: max-content;
+    position: sticky;
+    top: 0;
+    font-size: 0;
+    float:left;
+}
+#navbar a {
+    display: inline-block;
+    background-color: #182b49;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16;
+  }
+  
+  #navbar a:hover {
+   color: white;
+  }
+
+  ul{
+    list-style-type: none;
+
+    padding: 1px;
+  }
+
+ p{
+    font:28px
+ }
