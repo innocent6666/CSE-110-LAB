@@ -1,43 +1,69 @@
 #section1{
     background-color: rgb(245, 240, 230);
+    font-size: 20px;
 }
 
 #section2{
-    background-image: url('bg-orbs-1.jpg');
-
+    background-image: url('https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg');
+    background-size: cover;
+    background-position: center;
     color: white;
 }
-
-.block{
-    display: innavbarne-block;
-    margin-bottom: 20px;
+#section3 p {
+    font-size: 30px;
+    line-height: 1.5;
 }
+
+.sections {
+    display: inline-block;
+    width: 100%;
+}
+
 #navbar{
-    width: max-content;
     position: sticky;
     top: 0;
-    font-size: 0;
-    float:left;
+ 
+ /* postion sticky and top 0 should be applied together*/
 }
-#navbar a {
+/*
+can not apply the sticky position on the nav tag but only on the id navbar ( the div that contains id navbar )
+
+Adding more content after nav inside navbar ( the div outside) provides sticky behavior, but only for a moment - if the user scrolls down too much, nav will disappear with header, 
+________________________________________________________________________
+since it can't jump out below header's bottom border.*/
+
+nav{
+    width:400px;
+}
+    
+nav ul{  
+   
+    width: 100%;
+    /* width 100% means it takes up the whole screen*/
+    margin-top: 10px;
+    /* margin is outside the element, padding is inside the element*/
+}
+
+nav ul li{
     display: inline-block;
-    background-color: #182b49;
-    text-align: center;
-    padding: 14px 16px;
+    list-style: none;
+    margin: 20px 30px;
+}
+nav ul li a{
+    font-size: 40px;
     text-decoration: none;
-    font-size: 16;
-  }
-  
-  #navbar a:hover {
-   color: white;
-  }
-
-  ul{
-    list-style-type: none;
-
-    padding: 1px;
-  }
-
- p{
-    font:28px
- }
+    color: black;
+    padding: 10px 20px;
+    background-color: azure;
+    text-align: center;
+    border: 5px solid blueviolet;
+    border-radius: 25px;
+}
+nav ul li a:hover{
+    background-color: #182b49;
+    color:whitef;
+    font-size: 50px;
+}
+body{
+    overflow-x:hidden;
+}
