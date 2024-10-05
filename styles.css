@@ -15,6 +15,10 @@
     scroll-margin-top: 55px;
 }
 
+.sections img{
+    max-width: 100%;
+}
+
 #navbar{
     position: sticky;
     top: 0;
@@ -70,4 +74,23 @@ ul li a:hover{
 }
 body{
     font-size: 28px;
+}
+
+@media screen and (max-width: 800px) {
+    #navbar ul {
+        display: none;
+    }
+    #logo {
+        max-width: 75%;
+    }
+    h2{
+        font-size: 24px;
+    }
+    
+    p{
+        font-size: 20px;
+    }
+    .grid-container{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
