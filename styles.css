@@ -1,6 +1,5 @@
 #section1{
     background-color: rgb(245, 240, 230);
-    font-size: 20px;
 }
 
 #section2{
@@ -9,61 +8,66 @@
     background-position: center;
     color: white;
 }
-#section3 p {
-    font-size: 30px;
-    line-height: 1.5;
-}
 
 .sections {
     display: inline-block;
     width: 100%;
+    scroll-margin-top: 55px;
 }
 
 #navbar{
     position: sticky;
     top: 0;
- 
- /* postion sticky and top 0 should be applied together*/
-}
-/*
-can not apply the sticky position on the nav tag but only on the id navbar ( the div that contains id navbar )
-
-Adding more content after nav inside navbar ( the div outside) provides sticky behavior, but only for a moment - if the user scrolls down too much, nav will disappear with header, 
-________________________________________________________________________
-since it can't jump out below header's bottom border.*/
-
-nav{
     width:400px;
-}
-    
-nav ul{  
-   
-    width: 100%;
-    /* width 100% means it takes up the whole screen*/
-    margin-top: 10px;
-    /* margin is outside the element, padding is inside the element*/
+    float: left;
+    padding:10px 0;
+
 }
 
-nav ul li{
+ul{  
+    padding: 0;
+    margin: 0; 
+}
+
+ul li{
     display: inline-block;
     list-style: none;
-    margin: 20px 30px;
+    padding: 0;
 }
-nav ul li a{
-    font-size: 40px;
+ul li a{
     text-decoration: none;
-    color: black;
-    padding: 10px 20px;
-    background-color: azure;
-    text-align: center;
-    border: 5px solid blueviolet;
-    border-radius: 25px;
+    background-color: white;
+    color: #182b49;
+    padding: 10px;
 }
-nav ul li a:hover{
+ul li a:hover{
     background-color: #182b49;
-    color:whitef;
-    font-size: 50px;
+    color:white;
+}
+
+#section3{
+    background-color: rgb(245, 240, 230); 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap:50px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.grid-item {
+    background-color: #182b49; 
+    color: white; 
+    margin: 30px;
+    max-height: 500px; /* Limit the height of the boxes */
+    overflow-y: scroll; 
+    width: 100%; 
+    line-height: 1.6;
+}
+.grid-item p {
+    margin:20px;
 }
 body{
-    overflow-x:hidden;
+    font-size: 28px;
 }
